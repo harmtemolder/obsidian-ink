@@ -1,0 +1,84 @@
+// https://docs.obsidian.md/Reference/CSS+variables/Foundations/Colors
+.theme-light {
+  --color-base-00: hsl(0deg 0% 100%);
+  --color-base-05: hsl(0deg 0% 95%);
+
+  @for $i from 2 through 19 {
+    --color-base-#{$i * 5}: hsl(0deg 0% #{100 - ($i * 5)}%);
+  }
+
+  --color-base-100: hsl(0deg 0% 0%);
+
+  // Accent color
+  --accent-h: 0deg;
+  --accent-s: 0%;
+  --accent-l: 40%; // = base-60
+  --color-accent-hsl: var(--accent-h),
+  var(--accent-s),
+  var(--accent-l);
+  --color-accent: hsl(var(--color-accent-hsl));
+  --color-accent-1: var(--color-base-70);
+  --color-accent-2: var(--color-base-80);
+
+  /*// Extended colors
+  --color-red
+  --color-orange
+  --color-yellow
+  --color-green
+  --color-cyan
+  --color-blue
+  --color-purple
+  --color-pink
+  --color-red-rgb
+  --color-orange-rgb
+  --color-yellow-rgb
+  --color-green-rgb
+  --color-cyan-rgb
+  --color-blue-rgb
+  --color-purple-rgb
+  --color-pink-rgb*/
+
+  // Semantic colors > Surface colors
+  --background-primary: var(--color-base-00);
+  --background-primary-alt: var(--color-base-05);
+  --background-secondary: var(--color-base-05);
+  --background-secondary-alt: var(--color-base-10);
+  /*--background-modifier-hover
+  --background-modifier-active-hover
+  --background-modifier-border
+  --background-modifier-border-hover
+  --background-modifier-border-focus
+  --background-modifier-error-rgb
+  --background-modifier-error
+  --background-modifier-error-hover
+  --background-modifier-success-rgb
+  --background-modifier-success
+  --background-modifier-message
+  --background-modifier-form-field
+
+  // Semantic colors > Interactive colors
+  --interactive-normal
+  --interactive-hover
+  --interactive-accent
+  --interactive-accent-hsl
+  --interactive-accent-hover
+
+  // Text colors > Text foreground colors
+  --text-normal
+  --text-muted
+  --text-faint
+  --text-on-accent
+  --text-on-accent-inverted
+  --text-success
+  --text-warning
+  --text-error
+  --text-accent
+  --text-accent-hover
+
+  // Text colors > Text background colors
+  --text-selection
+  --text-highlight-bg*/
+
+  // Caret color
+  --caret-color: var(--color-base-70);
+}

@@ -1,0 +1,8 @@
+---
+  all:
+    editorconfig: true
+  css:
+    convert_quotes: "double"
+    newline_between_rules: true
+    selector_separator_newline: true
+    selector_separator: " "
