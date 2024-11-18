@@ -84,8 +84,8 @@
   --text-accent-hover
 
   // Text colors > Text background colors
-  --text-selection
-  --text-highlight-bg*/
+  --text-selection*/
+  --text-highlight-bg: hsla(var(--color-accent-hsl), 0.3);
   --caret-color: var(--color-base-70);
 }
 
