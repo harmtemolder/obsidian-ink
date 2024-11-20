@@ -33,3 +33,5 @@ A [GitHub workflow](https://docs.github.com/en/actions/writing-workflows/about-w
 git tag v0.1.1 --message=0.1.1
 git push origin --tags
 ```
+
+3. Check the result on <https://github.com/harmtemolder/obsidian-ink/releases> and publish the draft release.
